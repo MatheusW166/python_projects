@@ -6,7 +6,7 @@ TEL = r'(\d{4,5})[\s-]?(\d{4})$'
 
 
 def padronizar_telefone(telefone):
-    pattern = DDD + TEL
+    pattern = f'{DDD}{TEL}'
 
     if not re.search(pattern, telefone):
         return None
